@@ -76,7 +76,7 @@ imputer, scaler, pca, final_kmeans, X_pca = build_model(X)
 # 3. UI Judul & Deskripsi
 # -----------------------------------------
 st.markdown("<h1 style='text-align:center;color:#2E86C1;'>📊 Prediksi Kategori UKT Mahasiswa</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align:center;'>Aplikasi ini menggunakan clustering K-Means dengan PCA untuk memprediksi kategori UKT.</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center;'>Aplikasi ini menggunakan clustering K-Means dengan EDA, PCA untuk memprediksi kategori UKT.</p>", unsafe_allow_html=True)
 
 
 # -----------------------------------------
@@ -151,5 +151,6 @@ if st.button("Prediksi UKT"):
         st.success(f"Kategori UKT: {kategori_ukt_map.get(cluster_pred, 'Perlu interpretasi lanjutan')}")
 
       
+
 
 
